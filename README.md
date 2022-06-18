@@ -33,3 +33,12 @@ Handy for building JSON from shell:
     }
 
 Mac & Linux binaries checked in.
+
+## bash v zsh
+
+It turns out that [ and ] mean something to zsh, and it doesn't like you using them as "normal" arguments.
+
+To get around this (in zsh, not a problem in bash), you can prefix your command with `noglob`, e.g.:
+
+    noglob jsonof [ apple banana ]
+    
