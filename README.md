@@ -1,10 +1,10 @@
-# jsonobj
+# jsonof
 
 convert command line args to JSON
 
 Example:
 
-    $ ./jsonobj --pretty id: @uuid created: @now foo: bar isNew: true intValue: 123 floatVal: 23.88 doNull: null andNil: nil
+    $ ./jsonof --pretty id: @uuid created: @now foo: bar isNew: true intValue: 123 floatVal: 23.88 doNull: null andNil: nil
     {
         "andNil": null,
         "created": "2020-12-12T20:52:57Z",
@@ -18,18 +18,18 @@ Example:
 
 Handy for building JSON from shell:
 
-    $ ./jsonobj -p files: * pwd: `pwd`
+    $ ./jsonof -p files: * pwd: `pwd`
     {
         "files": [
             "Makefile",
             "README.md",
             "go.mod",
             "go.sum",
-            "jsonobj",
-            "jsonobj.go",
-            "jsonobj.lnx"
+            "jsonof",
+            "jsonof.go",
+            "jsonof.lnx"
         ],
-        "pwd": "/Users/pkelly/zorkspace/fxr/jsonobj"
+        "pwd": "/Users/pkelly/zorkspace/fxr/jsonof"
     }
 
 Mac & Linux binaries checked in.

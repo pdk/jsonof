@@ -1,10 +1,10 @@
-all: jsonobj jsonobj.lnx
+all: jsonf jsonf.lnx
 
 clean:
-	rm jsonobj jsonobj.lnx
+	rm jsonf jsonf.lnx
 
-jsonobj: jsonobj.go
-	go build -o jsonobj jsonobj.go
+jsonf: jsonf.go
+	go build -o jsonf jsonf.go
 
-jsonobj.lnx: jsonobj.go
-	env GOOS=linux GOARCH=amd64 go build -o jsonobj.lnx jsonobj.go
+jsonf.lnx: jsonf.go
+	env GOOS=linux GOARCH=amd64 go build -o jsonf.lnx jsonf.go
